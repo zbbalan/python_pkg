@@ -32,7 +32,8 @@ else:
 Age1 = float(input("请输入你的年龄："))
 if Age1 < 18 :
     print(f'你的年龄是{Age1},小于18，童工违法')
-elif Age1 > 18 and Age1 < 60 :
+###elif Age1 > 18 and Age1 < 60 :
+elif 18 <= Age1 <= 60 :     ####and 可以简写
     print (f'你的年龄是{Age1},大于18小于60，可上班')
 ###此段可简写elif 18 <= Age1 <= 60 :
 ###    print (f'你的年龄是{Age1},大于18小于60，可上班')
