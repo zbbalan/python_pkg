@@ -52,6 +52,17 @@ print(restue,type(restue)) ###(20, 1) <class 'tuple'
 r1,r2 = res(7,8)
 print(r1,r2,type(r1),type(r2)) ##56 1 <class 'int'> <class 'int'>
 
+######函数嵌套
+def testA():
+    """函数注释"""
+    print('AAA')
+    print('AAAA')
+def testB():
+    """这里要调用函数A"""
+    print('BBB')
+    testA()  ###嵌套调用函数A
+    print('上面调用函数A')
+testB()
 
 
 
