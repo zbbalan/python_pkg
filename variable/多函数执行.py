@@ -44,7 +44,7 @@ gender_info('rose',20,'女')  ###函数调用时，如果为缺省参数传值�
 
 ####包裹位置传递参数
 ###不定长参数也叫可变参数。用于不确定调用的时候会传递多少个参数(不传参也可以)的场景。此时，可用包裹(packing)位置参数，或者包裹关键字参数，来进行参数传递，会显得非常方便
-def verb_info(*args):
+def verb_info(*args): ##返回是元组类型参数
     print(args)
 
 verb_info('Tom')
@@ -53,7 +53,7 @@ verb_info('jaske',18,'女')
 ####包裹关键字传递
 ####无论是包裹位置传递还是包裹关键字传递，都是一个组包的过程。
 
-def wan_info(**kwargs):
+def wan_info(**kwargs):  ###返回是字典类型的参数
     print(kwargs)
 
 wan_info(NAme='boby',args=22,genders='男')
